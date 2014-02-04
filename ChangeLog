@@ -1,0 +1,24 @@
+FloodServ Module for NeoStats Changelog.
+Fish (F), Mark (M), DeadNotBuried (D)
+==============================================================================
+3.0.a4
+ - fix nickfloodact setting (F)
+
+3.0.a3
+ - Ignore Services Channel for floodchecks (F)
+ - fix segfault on topic changes while syncing servers (D)
+ - add support for channel topic floods (D)
+
+3.0.a2 - Mark (M)
+ - Update settings table to a2 compatible format. (M)
+ - Add support for random keys based on idea from DNB. (M)
+
+3.0.a1 - Mark (M)
+ - Add action options to flood events. We can now warn only or lock channels
+   for a join flood. (M).
+ - Associate flood structures with channel/user so we get faster lookups on a
+   given event. (M).
+ - Allocate user structures at signon and delete on quit, and allocate channel 
+   structures on newchan and delete on delchan. This reduces the need for 
+   timers to clean lists.
+ - Initial version to replace SecureServ flood checks. (M).
